@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    <form method="POST" action="/new">
+        label
+            p Enter message 
+            textarea(name="message", cols="30", rows="10")
+
+        label
+            p Enter your username
+            input(type="text", name="user")
+
+        button(type="submit") Send message
+    </form>
